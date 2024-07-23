@@ -66,12 +66,12 @@ Ausreden wie [1.8 ist noch aktuell](https://howoldisminecraft188.today/), siehe 
 
 ### Was kann ich machen, wenn ich schon infiziert bin?
 
-
 1. Backup machen
 2. Backup überprüfen und wiederherstellen.
 3. Server neu installieren
 4. Quelle des Ursprunges finden anhand von Punkt 1 Backup
 5. Person zur Anzeige bringen. Siehe [Hacker Paragraf](https://www.beckmannundnorda.de/serendipity/index.php?/archives/143-Gesetzestext-202c-StGB-Hackerparagraph.html)
+
 
 ### Du weißt nicht, wo man anfangen sollte?
 
