@@ -2,7 +2,7 @@
 title: 'Mit Proxmox und Ansible in eine Achterbahn der Automatisierung'
 description: 'In der unendlichen Weite der digitalen Welt hat unser Team, OneLiteFeather, eine kleine aber feine Spielwiese gefunden, auf der wir unsere kreativen und technischen Visionen verwirklichen. Im Zentrum dieser Entdeckungsreise stehen Proxmox und Ansible, zwei Werkzeuge, die uns nicht nur den Rücken freihalten, sondern auch die Türen zu unerforschten Gebieten öffnen.'
 pubDate: 'Oct 15 2023'
-heroImage: '/blog/riding-the-rollercoaster-of-automation-with-proxmox-and-ansible.png'
+heroImage: '/blog/riding-the-rollercoaster-of-automation-with-proxmox-and-ansible.webp'
 ---
 In der unendlichen Weite der digitalen Welt hat unser Team, OneLiteFeather, eine kleine aber feine Spielwiese gefunden, auf der wir unsere kreativen und technischen Visionen verwirklichen. Im Zentrum dieser Entdeckungsreise stehen Proxmox und Ansible, zwei Werkzeuge, die uns nicht nur den Rücken freihalten, sondern auch die Türen zu unerforschten Gebieten öffnen.
 
