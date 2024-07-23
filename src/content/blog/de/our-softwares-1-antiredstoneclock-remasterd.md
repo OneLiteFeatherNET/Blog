@@ -2,7 +2,7 @@
 title: 'Unsere Softwares #1 - AntiRedstoneClockRemasterd'
 description: ''
 pubDate: 'July 23 2024'
-heroImage: '/blog/riding-the-rollercoaster-of-automation-with-proxmox-and-ansible.webp'
+heroImage: '/blog/antiredstone-clock-remastered.webp'
 ---
 
 # Intro
