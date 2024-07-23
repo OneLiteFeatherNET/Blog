@@ -14,6 +14,6 @@ export default defineConfig({
     defaultLocale: "en",
     locales: ["en", "de"]
   },
-  output: "server",
-  adapter: cloudflare()
+//  output: "server",
+//  adapter: cloudflare()
 });
