@@ -11,7 +11,7 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.onelitefeather.net',
-  integrations: [mdx(), sitemap(), preact(), tailwind(),partytown({
+  integrations: [mdx(), sitemap(), preact(),partytown({
     config: {
       forward: ["dataLayer.push"],
     },

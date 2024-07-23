@@ -16,6 +16,7 @@ Kurz gesagt: Wenn du den Server mit dem infizierten Plugin startest, steht die T
 
 ## Was können die Täter mit meinem Server machen?
 
+
 - Infizierung auf einzelne oder sogar alle Plugins ausbreiten  
 - Wenn Rechte gegeben, alle deine Dateien auf dem Server löschen  
 - *Deinen Server live überwachen (Spieleranzahl, wer ist online, usw, Logs)*\*  
@@ -77,3 +78,12 @@ Ausreden wie [1.8 ist noch aktuell](https://howoldisminecraft188.today/), siehe 
 ## Ihr wisst nicht, wo man anfangen sollt?
 
 Joint auf [unseren Discord](https://discord.gg/aCHjPGJwBe) und öffnet ein Ticket. Gerne gestalten wir anhand des Feedbacks eine Tutorialreihe, die viele Sachen von oben abdeckt.
+
+
+## Werde Teil unserer Reise
+
+Bei OneLiteFeather schätzen wir eine entspannte Arbeitsatmosphäre und leben den Flair von kreativer Freiheit gepaart mit strukturierter Organisation. Wir arbeiten nach dem **Kanban-Prinzip**, das uns ermöglicht, in einem stressfreien Umfeld ohne starre Deadlines zu arbeiten. Dabei liegt unser Fokus auf **aktiver Kommunikation** und dem gemeinsamen Fortschritt. Wenn du in den Bereichen **Moderation**, **Community Management**, **Entwicklung** oder **Konzepterstellung** Erfahrung hast und dich in einer Gemeinschaft engagieren möchtest, die Wert auf persönliches Wachstum und Teamarbeit legt, dann bist du bei uns genau richtig. Referenzen sind willkommen und helfen uns, ein besseres Verständnis für deine Fähigkeiten und Erfahrungen zu bekommen.
+
+Wir sind gespannt darauf, von dir zu hören und gemeinsam spannende Projekte zu verwirklichen. Du kannst mich, **themeinerlp**, direkt auf Discord erreichen, oder du kannst über unseren Discord-Server in Kontakt treten, den du unter [1lf.link/discord](https://1lf.link/Cg6yO) findest. Dort kannst du ein Ticket eröffnen, um dich zu bewerben. Alternativ kannst du auch **OneLiteFeather** direkt via Discord kontaktieren. Lass uns über deine Ideen plaudern und wie du zur OneLiteFeather-Community beitragen kannst. Zusammen können wir die digitale Welt erkunden, unser Wissen erweitern und eine positive und unterstützende Gemeinschaft aufbauen.
+
+Falls Unklarheiten aufkommen sollten, sei frei uns zu fragen. Wir sind hier, um alle deine Fragen zu beantworten und freuen uns darauf, mehr über dich und deine Interessen zu erfahren!
