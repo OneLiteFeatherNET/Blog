@@ -8,13 +8,13 @@ Relativ unbekannt und trotzdem schon jetzt auf mehreren hundert Servern. Genauso
 
 Gestartet hat Ethanol ganz anders als Fractureiser als unscheinbares “Troll Plugin” für Minecraft Server, genauer gesagt für die Paper und Spigot Server. Gemeinsamkeiten zu Fractureiser sind die Elemente, die man als bösartig oder untypisch für eine “harmlose Trolling Aktion” erkennen kann. Somit ist es eine Form der Malware, es handelt sich um eine **Backdoor**.
 
-## Wie kommt Ethanol auf deinen Server
+### Wie kommt Ethanol auf deinen Server
 
 Ethanol an sich ist kein Plugin, was du in deinem Plugin Ordner finden kannst. Täter, die auf dem Ethanol Discord sind, infizieren durch deren Bot ein Plugin ihrer Wahl. Dafür wird z.B. Skript, FastAsyncWorldEdit oder Multiverse hochgeladen. Im Hintergrund wird das Plugin injected, sodass beim `onEnable()` des harmlosen Plugins eine Verbindung mit dem Kontrollserver/FTP (wie bei Fractureiser) mit den unkenntlich gemachten und sich ändernden [URI’s](https://de.wikipedia.org/wiki/Uniform_Resource_Identifier) wird.
 
 Kurz gesagt: Wenn du den Server mit dem infizierten Plugin startest, steht die Tür für die Täter und die Ethanol Entwickler offen, genauso wie bei Fractureiser.
 
-## Was können die Täter mit meinem Server machen?
+### Was können die Täter mit meinem Server machen?
 
 
 - Infizierung auf einzelne oder sogar alle Plugins ausbreiten  
@@ -29,11 +29,12 @@ Kurz gesagt: Wenn du den Server mit dem infizierten Plugin startest, steht die T
 - Jede Menge Trolling (es sind etwa 100 Befehle)  
 - *Wahrscheinlich noch Schlimmeres*  
 
+
 \\\*  Nicht sicher zu wenig Informationen vorhanden
 
 Ganz genaue Informationen gibt es zu diesem Zeitpunkt nicht, da der Code auf Bytecode Ebene verschlüsselt ist und der Obfuscator von den Entwickler “SirLennox” selbst geschrieben wurde, laut seiner Aussage. Allerdings steht die Lösung auch im Code, also es ist nur eine **Frage der Zeit**, bis man ihn lesen kann. 
 
-## Was kann ich gegen Ethanol machen, um nicht infiziert zu werden?
+### Was kann ich gegen die Ethanol-Malware machen, um nicht infiziert zu werden?
 
 - Gebe neuen Entwicklern, besonders denen, die auf Server Zugriff drängen, keinen Zugang.
   - Lass dich im Allgemeinen nicht [Social Engineeren](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Social-Engineering/social-engineering_node.html) 
@@ -46,8 +47,6 @@ Ganz genaue Informationen gibt es zu diesem Zeitpunkt nicht, da der Code auf Byt
   - Lade dir auf keinen Fall Premium Plugins herunter, die plötzlich kostenlos sind, besonders nicht auf Seiten wie Blackspigot. Aktuell werden dort absichtlich oder sehr wahrscheinlich Plugins wie Vulcan hochgeladen, um neue Server zu infizieren.
 - Verwende für euren Root/vServer/Linux Server nur SSH mit Public Key
   - Grenze die Nutzer ein
-
-
 - Jedes Plugin sollte in einer Pipeline (Erklärung, Beispiel mit [Atlassian](https://www.atlassian.com/de/devops/devops-tools/devops-pipeline)) gebaut werden und einen [Security Audit](https://de.wikipedia.org/wiki/IT-Sicherheitsaudit) (Sicherheitscheck) bestehen. Dies wird z. B. schon bei [IntellectualSites](https://github.com/IntellectualSites) (athion) mit [Jenkins](https://www.jenkins.io/doc/book/pipeline/getting-started/) durchgeführt und aktiver Wartung von Plugin.
 - Habe aktuelle Backups und teste die Backups in regelmäßigen Abständen!
   - Achtet auf die [3-2-1 Regel](https://www.ionos.de/digitalguide/server/sicherheit/3-2-1-backup-regel/) im Backup Mangement
@@ -66,8 +65,7 @@ Ganz genaue Informationen gibt es zu diesem Zeitpunkt nicht, da der Code auf Byt
 
 Ausreden wie [1.8 ist noch aktuell](https://howoldisminecraft188.today/), siehe Deutsche Community, gilt hier nicht. Eine 8 Jahre alte Software ist nicht aktuell. Es wird keine Security auditing gemacht, die 1.8 wird nicht aktiv gewartet und Microsoft/Mojang bietet keinen aktiven Support mehr! 
 
-## Was kann ich machen, wenn ich schon infiziert bin?
-
+### Was kann ich machen, wenn ich schon infiziert bin?
 
 1. Backup machen
 2. Backup überprüfen und wiederherstellen.
@@ -75,7 +73,8 @@ Ausreden wie [1.8 ist noch aktuell](https://howoldisminecraft188.today/), siehe 
 4. Quelle des Ursprunges finden anhand von Punkt 1 Backup
 5. Person zur Anzeige bringen. Siehe [Hacker Paragraf](https://www.beckmannundnorda.de/serendipity/index.php?/archives/143-Gesetzestext-202c-StGB-Hackerparagraph.html)
 
-## Ihr wisst nicht, wo man anfangen sollt?
+
+### Du weißt nicht, wo man anfangen sollte?
 
 Joint auf [unseren Discord](https://discord.gg/aCHjPGJwBe) und öffnet ein Ticket. Gerne gestalten wir anhand des Feedbacks eine Tutorialreihe, die viele Sachen von oben abdeckt.
 
