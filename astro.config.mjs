@@ -7,4 +7,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://blog.onelitefeather.net',
 	integrations: [mdx(), sitemap()],
+	i18n: {
+		defaultLocale: "en",
+		locales: ["es", "de"],
+	}
 });
