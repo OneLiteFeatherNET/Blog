@@ -9,6 +9,6 @@ export default defineConfig({
 	integrations: [mdx(), sitemap()],
 	i18n: {
 		defaultLocale: "en",
-		locales: ["es", "de"],
+		locales: ["en", "de"],
 	}
 });
