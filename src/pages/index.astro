@@ -95,7 +95,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/${post.slug}/`}>
-									<Image width={720} height={360} src={post.data.heroImage ?? ''} alt="" srcset={`/cdn-cgi/image/fit=scale-down,width=1920${post.data.heroImage} 1920px, /cdn-cgi/image/fit=scale-down,width=960${post.data.heroImage} 960px,/cdn-cgi/image/fit=scale-down,width= 640${post.data.heroImage} 640px`}/>
+									<Image width={720} height={360} src={`/cdn-cgi/image/fit=scale-down,metadata=none,f=auto${post.data.heroImage}`} alt="" srcset={`/cdn-cgi/image/fit=scale-down,metadata=none,f=auto,width=1920${post.data.heroImage} 1920px, /cdn-cgi/image/fit=scale-down,metadata=none,f=auto,width=960${post.data.heroImage} 960px,/cdn-cgi/image/fit=scale-down,metadata=none,f=auto,width=640${post.data.heroImage} 640px`}/>
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
