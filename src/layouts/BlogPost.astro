@@ -9,9 +9,9 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-const desktopImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=1920${heroImage}`
-const mobileImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=640${heroImage}`
-const tabletImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=960${heroImage}`
+const desktopImage = `/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=1920${heroImage}`
+const mobileImage = `/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=640${heroImage}`
+const tabletImage = `/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=960${heroImage}`
 ---
 <html lang={Astro.currentLocale}>
 	<head>
@@ -62,7 +62,7 @@ const tabletImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=960${
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={`/cdn-cgi/image/fit=scale-down%2Cmetadata=none${heroImage}`} alt="" srcset={`${heroImage} 1920w, ${heroImage} 960w,${heroImage} 640w`}/>}
+					{heroImage && <Image width={1020} height={510} src={`/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none${heroImage}`} alt="" srcset={`${heroImage} 1920w, ${heroImage} 960w,${heroImage} 640w`}/>}
 				</div>
 				<div class="prose">
 					<div class="title">
