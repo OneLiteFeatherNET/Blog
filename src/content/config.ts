@@ -14,4 +14,15 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const law = defineCollection({
+	type: 'content',
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		// Transform string to Date object
+		language: z.enum(['en', 'de']).default('de')
+	}),
+});
+
+export const collections = { blog, law };
