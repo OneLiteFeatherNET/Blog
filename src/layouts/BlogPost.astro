@@ -9,13 +9,13 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-const desktopImage = `/cdn-cgi/image/fit=scale-down,metadata=none,width=1920${heroImage}`
-const mobileImage = `/cdn-cgi/image/fit=scale-down,metadata=none,width=640${heroImage}`
-const tabletImage = `/cdn-cgi/image/fit=scale-down,metadata=none,width=960${heroImage}`
+const desktopImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=1920${heroImage}`
+const mobileImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=640${heroImage}`
+const tabletImage = `/cdn-cgi/image/fit=scale-down%2Cmetadata=none%2Cwidth=960${heroImage}`
 ---
 <html lang={Astro.currentLocale}>
 	<head>
-		<BaseHead title={title} description={description} image={`/cdn-cgi/image/fit=scale-down,metadata=none${heroImage}`} />
+		<BaseHead title={title} description={description} image={`/cdn-cgi/image/fit=scale-down%2Cmetadata=none${heroImage}`} />
 		<style>
 			main {
 				width: calc(100% - 2em);
