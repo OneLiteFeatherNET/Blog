@@ -3,7 +3,7 @@ title: 'Riding the Rollercoaster of Automation with Proxmox and Ansible'
 description: 'In the boundless expanse of the digital world, our team, OneLiteFeather, has discovered a quaint yet vibrant playground where we realize our creative and technical visions. At the heart of this expedition are Proxmox and Ansible, two tools that not only have our backs but also open doors to uncharted territories'
 pubDate: 'Oct 15 2023'
 heroImage: '/blog/riding-the-rollercoaster-of-automation-with-proxmox-and-ansible.webp'
-language: 'en: ''
+language: 'en'
 slug: 'riding-the-rollercoaster-of-automation-with-proxmox-and-ansible'
 ---
 In the boundless expanse of the digital world, our team, OneLiteFeather, has discovered a quaint yet vibrant playground where we realize our creative and technical visions. At the heart of this expedition are Proxmox and Ansible, two tools that not only have our backs but also open doors to uncharted territories.
