@@ -4,7 +4,7 @@ description: 'Today I would like to present you the active used technologies fro
 pubDate: 'Oct 21 2023'
 heroImage: '/blog/dev-blog-1.webp'
 language: 'en'
-slug: 'dev-blog-1'
+slug: 'dev-blog-1-what-we-using'
 ---
 This blog entry was translated, there is also a german version of it!
 
