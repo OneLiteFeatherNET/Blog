@@ -15,6 +15,10 @@ const today = new Date();
 			>
 		</a>
 	</div>
+	<div class="blog-links">
+		<a href="/imprint">Imprint</a>
+		<a href="/data-privacy">Privacy Policy</a>
+	</div>
 </footer>
 <style>
 	footer {
@@ -22,6 +26,19 @@ const today = new Date();
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	.blog-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.blog-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.blog-links a:hover {
+		color: rgb(var(--gray-dark));
 	}
 	.social-links {
 		display: flex;
