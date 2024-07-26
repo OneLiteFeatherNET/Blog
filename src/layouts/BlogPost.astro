@@ -9,7 +9,9 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-
+const desktopImage = `/cdn-cgi/image/fit=scale-down,width=1920${heroImage}`
+const mobileImage = `/cdn-cgi/image/fit=scale-down,width=640${heroImage}`
+const tabletImage = `/cdn-cgi/image/fit=scale-down,width=960${heroImage}`
 ---
 <html lang={Astro.currentLocale}>
 	<head>
@@ -60,7 +62,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" srcset={`${heroImage} 1920px, ${heroImage} 960px,${heroImage} 640px`}/>}
 				</div>
 				<div class="prose">
 					<div class="title">
