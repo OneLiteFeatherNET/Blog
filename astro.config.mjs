@@ -19,7 +19,7 @@ export default defineConfig({
   i18n: {
     defaultLocale: "en",
     locales: ["en", "de"]
-  }
-  //  output: "server",
-  //  adapter: cloudflare()
+  },
+  output: "server",
+  adapter: cloudflare()
 });
