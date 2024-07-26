@@ -7,8 +7,8 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 
-const posts = (await getCollection('blog', ({id }) => {
-	return id.startsWith('en/');
+const posts = (await getCollection('blog', ({data }) => {
+	return data.language.startsWith('en');
 })).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
