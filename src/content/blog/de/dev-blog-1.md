@@ -3,6 +3,7 @@ title: 'DevBlog #1'
 description: 'Heute möchte ich aus unserem Team die aktiv verwenden Technologien vorstellen und was die für Vorteile uns bringen. '
 pubDate: 'Oct 21 2023'
 heroImage: '/blog/dev-blog-1.webp'
+slug: 'dev-blog-1'
 ---
 Hallo alle zusammen,
 mein Name ist Phillipp. Ich bin einer der zwei Entwicklungsleiter und betreue hier im Team die Technologien sowie die Server Architektur. 
