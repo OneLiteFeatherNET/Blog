@@ -19,6 +19,7 @@
     "astro": "^4.12.2",
     "astro-robots-txt": "^1.0.0",
     "preact": "^10.22.1",
+    "sanitize-html": "^2.13.0",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
