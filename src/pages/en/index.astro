@@ -18,6 +18,12 @@ const posts = (await getCollection('blog', ({data }) => {
 <html lang={Astro.currentLocale}>
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title={SITE_TITLE}
+			href={new URL("rss.xml", Astro.site)}
+		/>
 		<style>
 			main {
 				width: 960px;
