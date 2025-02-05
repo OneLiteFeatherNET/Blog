@@ -7,6 +7,7 @@ import partytown from '@astrojs/partytown';
 import cloudflare from "@astrojs/cloudflare";
 
 import robotsTxt from "astro-robots-txt";
+import { imageService } from '@unpic/astro/service';
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,5 +34,14 @@ export default defineConfig({
     }
   },
   output: "server",
-  adapter: cloudflare()
+  adapter: cloudflare(),
+  image: {
+    service: imageService({
+      // This can usually be auto-detected
+      fallbackService: "astro",
+      placeholder: "blurhash",
+      // This is the default
+      layout: "constrained",
+    }),
+  },
 });

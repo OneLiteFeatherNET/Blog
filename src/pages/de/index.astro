@@ -5,14 +5,14 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { Image } from 'astro:assets';
+import { Image } from '@unpic/astro';
+import { cloudflare_images } from 'unpic/providers/cloudflare_images';
 
 const posts = (await getCollection('blog', ({data }) => {
 	return data.language.startsWith('de');
 })).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-console.log(Astro.site);
 ---
 
 <!doctype html>
@@ -104,8 +104,8 @@ console.log(Astro.site);
 						posts.map((post) => (
 							<li>
 								<a href={`/${post.data.language}/${post.slug}/`}>
-									{post.data.heroImage && <Image width={720} height={360} src={`/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none${post.data.heroImage}`} alt="" srcset={`/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=1920${post.data.heroImage} 1920w, /cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=960${post.data.heroImage} 960w,/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=640${post.data.heroImage} 640w`}/> }
-									{post.data.headerImage && <Image width={720} height={360} src={`/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none${post.data.headerImage}`} alt="" srcset={`/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=1920${post.data.headerImage} 1920w, /cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=960${post.data.headerImage} 960w,/cdn-cgi/image/fit=scale-down%2Cf=auto%2Cmetadata=none%2Cwidth=640${post.data.headerImage} 640w`}/> }
+									{post.data.heroImage && <Image width={720} height={360} transformer={cloudflare_images} src={post.data.heroImage}/>}
+									{post.data.headerImage && <Image width={720} height={360} transformer={cloudflare_images} src={post.data.headerImage}/> }
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />

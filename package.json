@@ -16,6 +16,7 @@
     "@astrojs/partytown": "^2.1.1",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
+    "@unpic/astro": "^1.0.0",
     "astro": "^4.12.2",
     "astro-robots-txt": "^1.0.0",
     "markdown-it": "^14.1.0",
