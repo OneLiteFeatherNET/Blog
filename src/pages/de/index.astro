@@ -12,6 +12,7 @@ const posts = (await getCollection('blog', ({data }) => {
 })).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+console.log(Astro.site);
 ---
 
 <!doctype html>
