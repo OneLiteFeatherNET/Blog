@@ -59,4 +59,4 @@ als Assistent statt einer Komplette Solution
 Github: https://github.com/OneLiteFeatherNET/BetterGoPaint
 Schwierigkeit: Hoch/Experte
 Aufwand: Viel (ca. 4-8 Stunden pro Woche, aufgrund der Modularität und tiefen Integration von FAWE sowie "Async" Arbeiten)
-Beschreibung: Eine verbesserte Version von goPaint von Arcaniax mit viele Verbesserungen und Bugfixes.
+Beschreibung: Eine verbesserte Version von goPaint von Arcaniax mit vielen Verbesserungen und Bugfixes.
