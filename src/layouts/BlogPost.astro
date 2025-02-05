@@ -60,7 +60,7 @@ const { title, description, pubDate, updatedDate, heroImage, headerImage } = Ast
 		<main>
 			<article>
 				<div class="hero-image">
-					<Image width={1020} height={510} src={heroImage ?? headerImage} alt=""/>
+					<Image width={1020} height={510} src={'' + (heroImage ?? headerImage)} alt=""/>
 				</div>
 				<div class="prose">
 					<div class="title">
