@@ -32,6 +32,5 @@ export default defineConfig({
       redirectToDefaultLocale: true
     }
   },
-  output: "server",
   adapter: cloudflare({ imageService: 'cloudflare' }),
 });
