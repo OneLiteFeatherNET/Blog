@@ -7,7 +7,6 @@ import partytown from '@astrojs/partytown';
 import cloudflare from "@astrojs/cloudflare";
 
 import robotsTxt from "astro-robots-txt";
-import { imageService } from '@unpic/astro/service';
 
 // https://astro.build/config
 export default defineConfig({
@@ -34,8 +33,5 @@ export default defineConfig({
     }
   },
   output: "server",
-  adapter: cloudflare(),
-  image: {
-    service: imageService(),
-  },
+  adapter: cloudflare({ imageService: 'cloudflare' }),
 });
