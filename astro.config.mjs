@@ -36,12 +36,6 @@ export default defineConfig({
   output: "server",
   adapter: cloudflare(),
   image: {
-    service: imageService({
-      // This can usually be auto-detected
-      fallbackService: "astro",
-      placeholder: "blurhash",
-      // This is the default
-      layout: "constrained",
-    }),
+    service: imageService(),
   },
 });
