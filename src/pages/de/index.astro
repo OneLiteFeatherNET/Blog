@@ -6,7 +6,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from '@unpic/astro';
-import { cloudflare_images } from 'unpic/providers/cloudflare_images';
 
 const posts = (await getCollection('blog', ({data }) => {
 	return data.language.startsWith('de');
@@ -104,8 +103,8 @@ const posts = (await getCollection('blog', ({data }) => {
 						posts.map((post) => (
 							<li>
 								<a href={`/${post.data.language}/${post.slug}/`}>
-									{post.data.heroImage && <Image width={720} height={360} transformer={cloudflare_images} src={post.data.heroImage}/>}
-									{post.data.headerImage && <Image width={720} height={360} transformer={cloudflare_images} src={post.data.headerImage}/> }
+									{post.data.heroImage && <Image width={720} height={360} src={post.data.heroImage}/>}
+									{post.data.headerImage && <Image width={720} height={360} src={post.data.headerImage}/> }
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
