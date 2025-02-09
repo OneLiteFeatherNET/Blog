@@ -36,7 +36,7 @@ let post = posts[0];
 				{
 					post && (
 						<article class="mx-auto w-160 my-4">
-							<a href={`/${post.data.language}/${post.slug}/`}>
+							<a href={`/${post.data.language}/blog/${post.slug}/`}>
 								<Image width={1280} height={640} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
 								<h3 class="font-montserrat text-center my-2">{post.data.title}</h3>
 								<p class="text-center">
@@ -53,7 +53,7 @@ let post = posts[0];
 						posts.slice(1).map((post) => {
 							return (
 								<li class="col-span-1 row-span-1 px-2 py-2 ">
-									<a href={`/${post.data.language}/${post.slug}/`}>
+									<a href={`/${post.data.language}/blog/${post.slug}/`}>
 										<Image width={720} height={360} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
 										<h4 class="font-montserrat text-center my-2">{post.data.title}</h4>
 										<p class="text-center">

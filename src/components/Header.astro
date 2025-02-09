@@ -8,11 +8,10 @@ import {Image} from "astro:assets";
 		<div class="flex items-center">
 			<Image src="/assets/logo.svg" alt="onelitefeather brand logo" class="h-25 w-25" width="150" height="150"/>
 			<h2 class="font-montserrat font-bold text-2xl relative">
-				<a href="/">{SITE_TITLE}</a>
+				<HeaderLink href={"/" + Astro.currentLocale + "/"} class="px-2">{SITE_TITLE}</HeaderLink>
 			</h2>
 		</div>
 		<div class="flex items-center mx-2 ">
-			<HeaderLink href={"/" + Astro.currentLocale + "/"} class="px-2">Home</HeaderLink>
 			<HeaderLink href={"/" + Astro.currentLocale + "/projects"} class="px-2">Projects</HeaderLink>
 			<HeaderLink href={"/" + Astro.currentLocale + "/blog"} class="px-2">Blog</HeaderLink>
 			<HeaderLink href="/" class="px-2 last:border-solid last:border-l-2 hover:border-l-slate-800">Discord</HeaderLink>
