@@ -19,54 +19,54 @@ let post = posts[0];
 
 <!doctype html>
 <html lang={Astro.currentLocale}>
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<link
-			rel="alternate"
-			type="application/rss+xml"
-			title={SITE_TITLE}
-			href={new URL("rss.xml", Astro.site)}
-		/>
-	</head>
-	<body>
-		<Header />
-		<main class="mx-96">
-			<section class="w-full justify-center my-2">
-				<h2 class="text-center font-montserrat text-4xl">Newest Posts</h2>
-				{
-					post && (
-						<article class="mx-auto w-160 my-4">
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title={SITE_TITLE}
+		href={new URL("rss.xml", Astro.site)}
+	/>
+</head>
+<body>
+<Header />
+<main>
+	<section class="w-full justify-center my-2">
+		<h2 class="text-center font-montserrat text-4xl">Newest Posts</h2>
+		{
+			post && (
+				<article class="mx-auto w-160 my-4">
+					<a href={`/${post.data.language}/blog/${post.slug}/`}>
+						<Image width={1280} height={640} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
+						<h3 class="font-montserrat text-center my-2">{post.data.title}</h3>
+						<p class="text-center">
+							<FormattedDate date={post.data.pubDate} />
+						</p>
+					</a>
+				</article>)
+		}
+	</section>
+	<div class="h-4"></div>
+	<section class="container mx-auto">
+		<ul class="mx-4 grid grid-flow-row grid-cols-2 gap-4">
+			{
+				posts.slice(1).map((post) => {
+					return (
+						<li class="col-span-1 row-span-1 px-2 py-2 ">
 							<a href={`/${post.data.language}/blog/${post.slug}/`}>
-								<Image width={1280} height={640} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
-								<h3 class="font-montserrat text-center my-2">{post.data.title}</h3>
+								<Image width={720} height={360} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
+								<h4 class="font-montserrat text-center my-2">{post.data.title}</h4>
 								<p class="text-center">
 									<FormattedDate date={post.data.pubDate} />
 								</p>
 							</a>
-						</article>)
-				}
-			</section>
-			<div class="h-4"></div>
-			<section class="w-full">
-				<ul class="mx-4 grid grid-flow-row grid-cols-2 gap-4">
-					{
-						posts.slice(1).map((post) => {
-							return (
-								<li class="col-span-1 row-span-1 px-2 py-2 ">
-									<a href={`/${post.data.language}/blog/${post.slug}/`}>
-										<Image width={720} height={360} class={"rounded-lg hover:shadow-2xl transition duration-300 ease-in-out delay-100"} src={''+(post.data.heroImage ?? post.data.headerImage)} alt={""}/>
-										<h4 class="font-montserrat text-center my-2">{post.data.title}</h4>
-										<p class="text-center">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
-									</a>
-								</li>
-							)
-						})
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+						</li>
+					)
+				})
+			}
+		</ul>
+	</section>
+</main>
+<Footer />
+</body>
 </html>

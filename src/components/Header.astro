@@ -4,7 +4,7 @@ import { SITE_TITLE } from '../consts';
 import {Image} from "astro:assets";
 ---
 <header class="container mx-auto">
-	<nav class="relative flex items-center justify-between flex-row px-4 text-slate-600 ">
+	<nav class="relative flex items-center justify-between flex-row px-4">
 		<div class="flex items-center">
 			<Image src="/assets/logo.svg" alt="onelitefeather brand logo" class="h-25 w-25" width="150" height="150"/>
 			<h2 class="font-montserrat font-bold text-2xl relative">
@@ -14,7 +14,7 @@ import {Image} from "astro:assets";
 		<div class="flex items-center mx-2 ">
 			<HeaderLink href={"/" + Astro.currentLocale + "/projects"} class="px-2">Projects</HeaderLink>
 			<HeaderLink href={"/" + Astro.currentLocale + "/blog"} class="px-2">Blog</HeaderLink>
-			<HeaderLink href="/" class="px-2 last:border-solid last:border-l-2 hover:border-l-slate-800">Discord</HeaderLink>
+			<a href="https://discord.gg/onelitefeather" target="_blank" class="px-2">Discord</a>
 		</div>
 	</nav>
 </header>
