@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
-import tailwind from "@astrojs/tailwind";
 import preact from "@astrojs/preact";
 import sitemap from '@astrojs/sitemap';
 import partytown from '@astrojs/partytown';
@@ -43,6 +42,6 @@ export default defineConfig({
   adapter: cloudflare({ imageService: 'cloudflare' }),
 
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });
