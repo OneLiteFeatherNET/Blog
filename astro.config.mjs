@@ -8,6 +8,8 @@ import cloudflare from "@astrojs/cloudflare";
 
 import robotsTxt from "astro-robots-txt";
 
+import vue from "@astrojs/vue";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.onelitefeather.net',
@@ -23,7 +25,7 @@ export default defineConfig({
     config: {
       forward: ["dataLayer.push"]
     }
-  })],
+  }), vue()],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "de"],
