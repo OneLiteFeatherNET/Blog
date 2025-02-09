@@ -10,9 +10,12 @@ import robotsTxt from "astro-robots-txt";
 
 import vue from "@astrojs/vue";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.onelitefeather.net',
+
   integrations: [mdx(), sitemap({
     i18n: {
       defaultLocale: 'en', // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
@@ -26,6 +29,7 @@ export default defineConfig({
       forward: ["dataLayer.push"]
     }
   }), vue()],
+
   i18n: {
     defaultLocale: "en",
     locales: ["en", "de"],
@@ -34,6 +38,11 @@ export default defineConfig({
       redirectToDefaultLocale: true
     }
   },
+
   output: "server",
-  adapter: cloudflare({ imageService: 'cloudflare' })
+  adapter: cloudflare({ imageService: 'cloudflare' }),
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
