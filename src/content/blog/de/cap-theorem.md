@@ -2,6 +2,7 @@
 title: 'DevBlog #3: Das CAP-Theorem in der Paper Plugin-Entwicklung'
 description: 'Erfahre, wie das CAP-Theorem zentrale Kompromisse in verteilten Systemen beschreibt und welche Auswirkungen dies auf die Wahl zwischen stateful und stateless Ansätzen in Paper Plugins hat – basierend auf den Gegenüberstellungen in DevBlog #2.'
 pubDate: 'Feb 10 2025'
+headerImage: '/blog/dev-blog-1.webp'
 slug: 'dev-blog-3-cap-theorem'
 ---
 
