@@ -2,6 +2,7 @@
 title: 'DevBlog #2: Stateful vs. Stateless in Paper Plugins'
 description: 'Erfahre, welche Vor- und Nachteile stateful und stateless Ansätze in der Paper Plugin-Entwicklung bieten – inklusive praktischer Beispiele aus unserer GitHub-Organisation OneLiteFeatherNET.'
 pubDate: 'Feb 10 2025'
+heroImage: '/blog/dev-blog-1.webp'
 slug: 'dev-blog-2-stateful-vs-stateless-paper-plugins'
 ---
 
