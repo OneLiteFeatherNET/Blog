@@ -9,7 +9,7 @@ import { Image } from 'astro:assets';
 
 
 const posts = (await getCollection('blog', ({data }) => {
-	return data.language.startsWith('de');
+	return data.language.startsWith(Astro.currentLocale as string);
 })).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ) as any[];
