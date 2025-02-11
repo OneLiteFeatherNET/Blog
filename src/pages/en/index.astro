@@ -16,8 +16,10 @@ import { Image } from "astro:assets";
     <section class="min-h-64 shadow">
         <div class="grid grid-flow-col grid-cols-2 h-max justify-center w-full mx-auto container">
             <div class="w-full my-auto relative mx-auto row-span-2 col-span-1 text-right justify-items-end">
-                <h1 class="w-full text-right my-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-orange from-0% via-brand-pink via-50% via-brand-purple via-75% to-brand-blue to-100% dark:bg-gradient-to-r dark:from-brand-orange dark:from-0% dark:via-brand-pink via-50% dark:via-brand-purple via-100%
-">OneLiteFeather</h1>
+                <div class="w-full text-right justify-items-end grid">
+                    <h1 class="dark:hidden text-right w-max my-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-orange from-0% via-brand-pink via-50% via-brand-purple via-75% to-brand-blue to-100%">OneLiteFeather</h1>
+                    <h1 class="not-dark:hidden text-right w-max my-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-orange from-0% via-brand-pink via-50% via-brand-purple via-75% to-brand-cyan to-100%">OneLiteFeather</h1>
+                </div>
                 <p class="font-bold">OneLiteFeather is an open source network with the focus <br>
                     to give students, trainees and young people a perspective.</p>
             </div>
